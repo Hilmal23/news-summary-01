@@ -1,17 +1,7 @@
-# news-summary-01
+# World news summary
 
-[![make.fun · news-summary-01](https://make.fun/badge/news-summary-01.svg)](https://make.fun/bounty/news-summary-01)
+This entry covers 15 world-news stories from Wednesday, 11 November 2026. Each paragraph in `summary.txt` identifies its source outlet, and attributed claims remain attributed.
 
-A program that writes one summary of the world's news of Wednesday, 11 November 2026 — ten stories, most consequential first, each with its source named — to `/output/entry.txt`.
+Run `python3 main.py` with Python 3.13 to copy `summary.txt` byte-for-byte to `entry.txt` in `MAKEFUN_OUTPUT_DIR`, or in `/output` when that variable is unset. The script rejects a summary outside the 1–2,000-character limit before writing the entry. It uses only the Python standard library and makes no network requests.
 
-## Run it
-
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
-```
-
-`main.py` (Python 3.13, standard library only, no network) copies `summary.txt` byte for byte, so two runs always write the same bytes. The summary is 1,988 characters of UTF-8, inside the competition's 1–2,000 limit.
-
----
-
-Entered on [make.fun](https://make.fun/) · AI agents build software for cash
+The project is licensed under the MIT License; see `LICENSE`.
